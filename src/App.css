@@ -1,38 +1,57 @@
-.App {
+#main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  width: 20%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label{
+  display: block;
+  padding-bottom:5px;
+  padding-top: 15px;
+  text-align: start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
 }
+input:focus {
+  border: 2px solid rgb(79, 79, 228);
+  outline: none;
+}
+#emailwarning  {
+  color: red;
+  font-size: 12px;
+  text-align: start;
+}
+#passwordwarning {
+  color: red;
+  font-size: 12px;
+  text-align: start;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+#cpasswordwarning{
+  color: red;
+  font-size: 12px;
+  text-align: start;
+
+}
+#submitWarning {
+  color: red;
+  font-size: 12px;
+  text-align: start;
+}
+button {
+  margin-top: 10px;
+  padding: 6px 0px 6px 0px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(71, 71, 214);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
